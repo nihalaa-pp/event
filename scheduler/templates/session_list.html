@@ -1,0 +1,8 @@
+<!-- session_list.html -->
+<h1>Sessions</h1>
+<ul>
+    {% for session in sessions %}
+        <li>{{ session.title }} ({{ session.start_time }} - {{ session.end_time }})</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'add_session' %}">Add New Session</a>

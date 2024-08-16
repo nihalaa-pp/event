@@ -1,0 +1,19 @@
+<!-- event_list.html -->
+<h1>Events</h1>
+<ul>
+    {% for event in events %}
+        <li><a href="{% url 'event_detail'  %}">{{ event.title }}</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create_event' %}">Create New Event</a>
+<br>
+<a href="{% url 'add_session' %}">Add Event</a>
+<a href="{% url 'delete_event' %}">Delete</a>
+<a href="{% url 'event_detail' %}">Event Detail</a>
+<a href="{% url 'event' %}">Events</a>
+<a href="{% url 'session_list' %}">session_list</a>
+<a href="{% url 'update_session' %}">update</a>
+ {% endcomment %}
+
+
+

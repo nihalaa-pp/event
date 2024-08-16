@@ -1,0 +1,8 @@
+<!-- delete_session.html -->
+<h1>Delete Session</h1>
+<p>Are you sure you want to delete the session "{{ session.name }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm Deletion</button>
+    <a href="{% url 'session_list' %}">Cancel</a>
+</form>
